@@ -1,0 +1,27 @@
+{
+  "n_samples": 2388,
+  "clip_len": 64,
+  "n_subjects_included": 1,
+  "subjects_included": [
+    1
+  ],
+  "cv": "random",
+  "channel_primary": "T7",
+  "channel_fallback": [],
+  "configs": [
+    {
+      "depth": 1,
+      "base_ch": 8,
+      "epochs": 2,
+      "batch_size": 128,
+      "clip_len": 64,
+      "channel": "T7",
+      "cv": "random",
+      "train_acc": 0.2706806282722513,
+      "test_acc": 0.2301255230125523,
+      "train_time_s": 0.17884063720703125,
+      "test_time_s": 0.011458396911621094,
+      "params_M": 0.0021
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "network": "/home/fabric/work/CI-BioEng-Class/fear_simulation/circuit_config.json",
+  "simulation": "/home/fabric/work/CI-BioEng-Class/fear_simulation/simulation_config.json"
+}

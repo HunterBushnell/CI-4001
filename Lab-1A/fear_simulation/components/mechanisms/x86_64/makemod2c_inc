@@ -1,0 +1,56 @@
+./gap.c: .././gap.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "gap.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./gap.o: ./gap.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./k_rtm.c: .././k_rtm.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "k_rtm.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./k_rtm.o: ./k_rtm.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./k_wb.c: .././k_wb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "k_wb.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./k_wb.o: ./k_wb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./leak.c: .././leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "leak.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./leak.o: ./leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./na_rtm.c: .././na_rtm.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "na_rtm.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./na_rtm.o: ./na_rtm.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./na_wb.c: .././na_wb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "na_wb.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./na_wb.o: ./na_wb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
+./vecevent.c: .././vecevent.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecevent.mod" -o "/home/fabric/work/CI-BioEng-Class/fear_simulation/components/mechanisms/x86_64")
+
+./vecevent.o: ./vecevent.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
