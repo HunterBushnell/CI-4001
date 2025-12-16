@@ -1,0 +1,7 @@
+# Hide private models from public GitHub repo for now
+/Final-Project/models/LUT/
+
+# Ignore output files
+/Final-Project/output/
+/Final-Project/models/LUT/output/
+/Final-Project/models/LUT/output/*
